@@ -39,7 +39,7 @@ A free account (an email address, no card) includes 500 calls a month. Every suc
 
 ### Claude (claude.ai, Desktop, mobile)
 
-Add it as a connector: **Customize → Connectors → Add custom connector**, name it Cruise Itinerary, and paste `https://cruise-itinerary.com/mcp`. The first time Claude calls a tool you sign in: enter your email, open the link we send, then approve the connection.
+Add it as a connector: **Customize → Connectors → Add custom connector**, name it Cruise Itinerary, and paste `https://cruise-itinerary.com/mcp`. Claude detects the OAuth sign-in and asks you to sign in when you add it: enter your email, open the link we send, then approve the connection.
 
 To get the `cruise-research` skill as well, install this repository as a plugin (below) or from the Claude directory once it is listed.
 
@@ -95,7 +95,7 @@ Clients without OAuth can send an API key from your [dashboard](https://cruise-i
 
 The server follows the [MCP authorization specification](https://modelcontextprotocol.io/specification/latest/basic/authorization): OAuth 2.1 with PKCE (S256), protected resource metadata at `https://cruise-itinerary.com/.well-known/oauth-protected-resource/mcp`, and an authorization server at `https://cruise-itinerary.com` that supports Client ID Metadata Documents and dynamic client registration. Sign-in is by email link; a new address gets a free account. You approve each app on a consent page that shows which app is asking and where it returns you. Access tokens last an hour and refresh tokens rotate on use. Connecting never shares your API keys, email address or billing with the app, and the app can only read.
 
-`initialize` and `tools/list` answer without signing in, so a client can show the tools first. Tool calls need an account.
+Every request needs an account, `initialize` included: without a token the server answers `401` with a `WWW-Authenticate` header pointing at the protected resource metadata, which is how clients know to start sign-in.
 
 ## Read the data the right way
 
