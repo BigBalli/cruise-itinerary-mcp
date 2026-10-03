@@ -103,7 +103,7 @@ The server follows the [MCP authorization specification](https://modelcontextpro
 - A missing (null) fare means the cabin was not offered or was sold out; the data does not say which.
 - Itinerary days marked `estimated` were placed from the distance between ports and can be off by a day. `exact` days come from the cruise line's published itinerary.
 - Port capacity is monthly only, and berths are ship capacity, not passengers.
-- Coverage is strongest for North American cruise lines. P&O Cruises, TUI/Marella, AIDA, Saga and Fred. Olsen are not covered.
+- Coverage is strongest for North American cruise lines. TUI/Marella, AIDA, Saga and Fred. Olsen are not covered.
 
 ## Data and privacy
 

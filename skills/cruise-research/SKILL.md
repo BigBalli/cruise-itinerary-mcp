@@ -26,7 +26,7 @@ The `cruise-itinerary` MCP server gives read-only access to a weekly register of
 - **Itinerary days have a confidence.** `day_confidence: "exact"` comes from the cruise line's published itinerary (embark and disembark days are always exact). `"estimated"` days were placed from the distance between ports and can be off by a day. When you give a date for an estimated call, say it is estimated. On a cruise, `itinerary_source: "official"` means day numbers come from the line; `"supplier"` means only the order of stops is known.
 - **Berths are capacity, not passengers.** `port_month_capacity` sums each ship's lower-berth capacity over every ship-day in port. Real passenger numbers differ (ships sail above or below lower-berth capacity). Write "berths" or "passenger capacity", never "passengers" or "visitors".
 - **Port capacity is monthly only.** There are no per-day counts, by design: many call days are estimated. Do not divide a month into days or present a "busiest day" from this data. `ship_days` counts a ship in port two days twice; `distinct_ships` counts each ship once.
-- **Coverage.** Strongest for North American cruise lines. P&O Cruises, TUI/Marella, AIDA, Saga and Fred. Olsen are not covered. If a user asks about those, say the data does not include them rather than reporting "no sailings".
+- **Coverage.** Strongest for North American cruise lines. TUI/Marella, AIDA, Saga and Fred. Olsen are not covered. If a user asks about those, say the data does not include them rather than reporting "no sailings".
 - **The Price Index** is a chained same-sailing index of weekly fares, 100 on 2026-09-06. A series needs at least 30 matched sailings. It describes how fares moved, not how expensive a cruise is.
 
 ## Plans and errors
