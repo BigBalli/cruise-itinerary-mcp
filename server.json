@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.cruise-itinerary/mcp",
+  "title": "Cruise Itinerary",
+  "description": "Cruise sailings, itineraries, weekly fare history, port capacity and the Cruise Price Index.",
+  "version": "1.0.0",
+  "websiteUrl": "https://cruise-itinerary.com/docs#mcp",
+  "repository": {
+    "url": "https://github.com/BigBalli/cruise-itinerary-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://cruise-itinerary.com/assets/img/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cruise-itinerary.com/mcp"
+    }
+  ]
+}

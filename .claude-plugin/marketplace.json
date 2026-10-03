@@ -1,0 +1,15 @@
+{
+  "name": "cruise-itinerary",
+  "description": "The Cruise Itinerary plugin: cruise sailings, itineraries, weekly fares and port capacity in Claude.",
+  "owner": {
+    "name": "Cruise Itinerary",
+    "email": "hello@cruise-itinerary.com"
+  },
+  "plugins": [
+    {
+      "name": "cruise-itinerary",
+      "source": "./",
+      "description": "Cruise schedules, itineraries, weekly fares and port capacity in Claude, through the Cruise Itinerary MCP server."
+    }
+  ]
+}

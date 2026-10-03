@@ -1,0 +1,15 @@
+{
+  "name": "cruise-itinerary",
+  "displayName": "Cruise Itinerary",
+  "version": "1.0.0",
+  "description": "Cruise lines, ships, ports, upcoming sailings, day-by-day itineraries, weekly fare history, monthly port capacity and the Cruise Price Index, through the Cruise Itinerary MCP server, plus a research skill that knows the data's caveats.",
+  "author": {
+    "name": "Cruise Itinerary",
+    "email": "hello@cruise-itinerary.com",
+    "url": "https://cruise-itinerary.com"
+  },
+  "homepage": "https://cruise-itinerary.com/docs#mcp",
+  "repository": "https://github.com/BigBalli/cruise-itinerary-mcp",
+  "license": "MIT",
+  "keywords": ["cruise", "travel", "itinerary", "ships", "ports", "fares", "price-index", "tourism"]
+}

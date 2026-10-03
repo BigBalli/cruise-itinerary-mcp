@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cruise-itinerary": {
+      "type": "http",
+      "url": "https://cruise-itinerary.com/mcp"
+    }
+  }
+}
