@@ -10,6 +10,8 @@
   },
   "homepage": "https://cruise-itinerary.com/docs#mcp",
   "repository": "https://github.com/BigBalli/cruise-itinerary-mcp",
+  "privacyPolicyUrl": "https://cruise-itinerary.com/privacy",
+  "supportUrl": "https://cruise-itinerary.com/docs#mcp",
   "license": "MIT",
   "keywords": ["cruise", "travel", "itinerary", "ships", "ports", "fares", "price-index", "tourism"]
 }
