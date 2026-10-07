@@ -39,7 +39,9 @@ Each tool needs a minimum plan on the user's Cruise Itinerary account:
 | `search_sailings`, `get_itinerary` | Developer |
 | `get_price_history`, `port_month_capacity`, `cruise_price_index` (series) | Business |
 
-When a tool answers with an error saying the plan is too low, tell the user plainly which plan the question needs and give the link in the message (https://cruise-itinerary.com/pricing). Do not retry the same call, and do not try to work around it with other tools. Each successful tool call counts as one API call toward the account's monthly allowance, so avoid calls you do not need: resolve once, reuse the ids, and ask for a sensible page size.
+A Free account can still try `search_sailings`, `get_itinerary` and `get_price_history`: 10 successful calls a month each. When those are used up, the call is refused like any other plan gate.
+
+When a tool answers with an error saying the plan is too low, tell the user plainly which plan the question needs and pass on the links in the message: the plan page (https://cruise-itinerary.com/pricing) and, when the message names one, the free Cruiseable page for that sailing or cruise, which is the better answer for someone planning their own trip. Do not retry the same call, and do not try to work around it with other tools. Each successful tool call counts as one API call toward the account's monthly allowance, so avoid calls you do not need: resolve once, reuse the ids, and ask for a sensible page size.
 
 Errors about arguments (an unknown id, a bad date) are safe to fix and retry once.
 

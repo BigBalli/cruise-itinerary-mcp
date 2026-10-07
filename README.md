@@ -28,12 +28,12 @@ All tools are read-only (`readOnlyHint: true`). Each returns the same JSON as th
 |---|---|---|
 | `resolve_entity` | A port, ship or cruise line name, however spelt, to the id the other tools take | Free |
 | `cruise_price_index` | The weekly Cruise Price Index: latest 12 weeks (Free), or a full series by line, cabin and segment (Business) | Free / Business |
-| `search_sailings` | Upcoming sailings by ship, line, port, departure port, region, dates, length and fare, with the latest weekly fares | Developer |
-| `get_itinerary` | A sailing's dated day-by-day itinerary, or a cruise's stop list | Developer |
-| `get_price_history` | Every weekly fare snapshot of one sailing | Business |
+| `search_sailings` | Upcoming sailings by ship, line, port, departure port, region, dates, length and fare, with the latest weekly fares | Developer (Free: 10 trial calls a month) |
+| `get_itinerary` | A sailing's dated day-by-day itinerary, or a cruise's stop list | Developer (Free: 10 trial calls a month) |
+| `get_price_history` | Every weekly fare snapshot of one sailing | Business (Free: 10 trial calls a month) |
 | `port_month_capacity` | Ship-days, distinct ships and berths at one port, month by month | Business |
 
-A free account (an email address, no card) includes 500 calls a month. Every successful tool call counts as one API call. A tool above your plan answers with a short message and a link to [pricing](https://cruise-itinerary.com/pricing).
+A free account (an email address, no card) includes 500 calls a month. Every successful tool call counts as one API call. A tool above your plan answers with a short message, a link to [pricing](https://cruise-itinerary.com/pricing) and, when the call named a sailing or cruise, a link to its free page on [Cruiseable](https://cruiseable.co).
 
 ## Setup
 
