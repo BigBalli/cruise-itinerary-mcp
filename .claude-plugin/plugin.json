@@ -1,6 +1,7 @@
 {
   "name": "cruise-itinerary",
   "displayName": "Cruise Itinerary",
+  "icon": "./assets/icon-512.png",
   "version": "1.0.0",
   "description": "Cruise lines, ships, ports, upcoming sailings, day-by-day itineraries, weekly fare history, monthly port capacity and the Cruise Price Index, through the Cruise Itinerary MCP server, plus a research skill that knows the data's caveats.",
   "author": {
@@ -13,5 +14,14 @@
   "privacyPolicyUrl": "https://cruise-itinerary.com/privacy",
   "supportUrl": "https://cruise-itinerary.com/docs#mcp",
   "license": "MIT",
-  "keywords": ["cruise", "travel", "itinerary", "ships", "ports", "fares", "price-index", "tourism"]
+  "keywords": [
+    "cruise",
+    "travel",
+    "itinerary",
+    "ships",
+    "ports",
+    "fares",
+    "price-index",
+    "tourism"
+  ]
 }
