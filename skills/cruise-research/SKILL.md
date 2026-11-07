@@ -36,7 +36,7 @@ Each tool needs a minimum plan on the user's Cruise Itinerary account:
 | Tool | Plan |
 |---|---|
 | `resolve_entity`, `cruise_price_index` (latest) | Free |
-| `search_sailings`, `get_itinerary` | Developer |
+| `search_sailings`, `get_itinerary` | Hobby |
 | `get_price_history`, `port_month_capacity`, `cruise_price_index` (series) | Business |
 
 A Free account can still try `search_sailings`, `get_itinerary` and `get_price_history`: 10 successful calls a month each. When those are used up, the call is refused like any other plan gate.

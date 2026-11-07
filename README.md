@@ -28,8 +28,8 @@ All tools are read-only (`readOnlyHint: true`). Each returns the same JSON as th
 |---|---|---|
 | `resolve_entity` | A port, ship or cruise line name, however spelt, to the id the other tools take | Free |
 | `cruise_price_index` | The weekly Cruise Price Index: latest 12 weeks (Free), or a full series by line, cabin and segment (Business) | Free / Business |
-| `search_sailings` | Upcoming sailings by ship, line, port, departure port, region, dates, length and fare, with the latest weekly fares | Developer (Free: 10 trial calls a month) |
-| `get_itinerary` | A sailing's dated day-by-day itinerary, or a cruise's stop list | Developer (Free: 10 trial calls a month) |
+| `search_sailings` | Upcoming sailings by ship, line, port, departure port, region, dates, length and fare, with the latest weekly fares | Hobby (Free: 10 trial calls a month) |
+| `get_itinerary` | A sailing's dated day-by-day itinerary, or a cruise's stop list | Hobby (Free: 10 trial calls a month) |
 | `get_price_history` | Every weekly fare snapshot of one sailing | Business (Free: 10 trial calls a month) |
 | `port_month_capacity` | Ship-days, distinct ships and berths at one port, month by month | Business |
 
